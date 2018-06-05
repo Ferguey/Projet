@@ -15,22 +15,27 @@ if (isset($_POST['login']) && isset($_POST['pwd'])) {
 	$response = $bdd -> query($login_valide);
 	$results = $response->fetch();
 
-		if($_POST['login'] == $results['Login'] && $_POST['pwd'] == $results['Password'])
-	{
-		session_start();
-		header('');
-		$_SESSION['login'] = $_POST['login'];
-		$_SESSION['pwd'] = $_POST['pwd'];
+		if($_POST['login'] == $results['Login'])
+		{
+			if($_POST['pwd'] == $results['Password'])
+			{
+	
+				session_start();
+				header('');
+				$_SESSION['login'] = $_POST['login'];
+				$_SESSION['pwd'] = $_POST['pwd'];
 		
-	}
-	else
-	{
-					
+			}
+			else
+			{
+				header('location : badPasword.htlm');
+			
+			}
+		else
+		{
+			header('location : badLogin.html');
 
-		// puis on le redirige vers la page d'accueil
-		echo '<meta http-equiv="refresh" content="0;URL=test.php">';
-		echo 'coucou';
-	}
+		}
 	
 }
 else {
