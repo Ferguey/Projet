@@ -8,34 +8,36 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	<div class="divLogin">
-		<span class="titreLogin">
-			Login
-		</span>
-				
-		<div class="divChampsLogin">
-			<input class="champsLogin" type="text" name="username" placeholder="Username">
-		</div>
-							
-		<div class="divChampsLogin">
-			<input class="champsLogin" type="password" name="pass" placeholder="Password">
-		</div>
+	<form action="php/login.php" method="post">
+		<div class="divLogin">
+			<span class="titreLogin">
+				Login
+			</span>
 					
-		<div class="divChampsRememberMe">
-			<input id="ckb1" type="checkbox" name="remember-me">
-			<label class="labelRememberMe" for="ckb1">
-				Remember me
-			</label>
-			<a href="#" class="forgotPassword">
-				Forgot?
+			<div class="divChampsLogin">
+				<input class="champsLogin" type="text" name="username" placeholder="Username">
+			</div>
+								
+			<div class="divChampsLogin">
+				<input class="champsLogin" type="password" name="pass" placeholder="Password">
+			</div>
+						
+			<div class="divChampsRememberMe">
+				<input id="ckb1" type="checkbox" name="remember-me">
+				<label class="labelRememberMe" for="ckb1">
+					Remember me
+				</label>
+				<a href="#" class="forgotPassword">
+					Forgot?
+				</a>
+			</div>
+			<a href="index.html" class="">
+			<button class="boutonLogin">
+				Login
+			</button>
 			</a>
+			
 		</div>
-		<a href="index.html" class="">
-		<button class="boutonLogin">
-			Login
-		</button>
-		</a>
-		
-	</div>
+	</form>
 </body>
 </html>

@@ -18,7 +18,7 @@ if (isset($_POST['login']) && isset($_POST['pwd'])) {
 		if($_POST['login'] == $results['Login'] && $_POST['pwd'] == $results['Password'])
 	{
 		session_start();
-		header('location: page_membre.php');
+		header('');
 		$_SESSION['login'] = $_POST['login'];
 		$_SESSION['pwd'] = $_POST['pwd'];
 		
