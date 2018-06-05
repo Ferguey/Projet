@@ -11,29 +11,30 @@ $login_valide = 'SELECT * FROM users';
 $pwd_valide = 'SELECT password FROM users';
 
 // on teste si nos variables sont définies
-if (isset($_POST['login']) && isset($_POST['pwd'])) {
+if (isset($_POST['login']) && isset($_POST['password'])) {
 	$response = $bdd -> query($login_valide);
 	$results = $response->fetch();
 
 		if($_POST['login'] == $results['Login'])
 		{
-			if($_POST['pwd'] == $results['Password'])
+			if($_POST['password'] == $results['Password'])
 			{
 	
 				session_start();
-				header('');
+				header('Location: badPassword.html');
 				$_SESSION['login'] = $_POST['login'];
-				$_SESSION['pwd'] = $_POST['pwd'];
+				$_SESSION['password'] = $_POST['password'];
 		
 			}
 			else
 			{
-				header('location : badPasword.htlm');
+				header('Location: badPassword.html');
 			
 			}
+		}
 		else
 		{
-			header('location : badLogin.html');
+			header('Location: badLogin.html');
 
 		}
 	
