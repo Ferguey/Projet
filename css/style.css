@@ -1,0 +1,23 @@
+
+
+.barreBas {
+    position: fixed;
+    display: table;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 140px;
+    background-color: black;
+}
+
+.categorieBarreBas:first-child{
+	border-top: 5px solid red;
+}
+
+.categorieBarreBas {
+    height: 20%;
+    background: white;
+    border-right: 5px solid red;
+    border-left: 5px solid red;
+    border-bottom: 5px solid red;
+}
