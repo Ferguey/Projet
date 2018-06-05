@@ -140,3 +140,23 @@ button:hover {
   border-radius: 3px;
   transition: all 0.4s;
 }
+
+.divChampsBadLogin {
+  width: 100%;
+  position: relative;
+  background-color: #e6e6e6;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.divChampsBadLogin::after {
+    content: "\f06a";
+    font-family: FontAwesome;
+    display: block;
+    position: absolute;
+    color: #c80000;
+    font-size: 16px;
+    bottom: calc((100% - 20px) / 2);
+    right: 8px;
+}
