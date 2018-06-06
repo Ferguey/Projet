@@ -24,11 +24,15 @@ session_start();
 				Nous avons envoyé votre nouveau mot de passe à cette adresse mail : <?php echo $_SESSION['mail'] ?>
 			</span>			
 			<br></br>
-			<a href="index.html" class="">
+			<a href="login.html" class="">
 			<button class="boutonLogin">
 				Retour
 			</button>
 			</a>
+			
+			<?php 
+			session_unset ();
+			session_destroy();?>
 	</form>
 </body>
 </html>
