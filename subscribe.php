@@ -26,7 +26,7 @@
 <!--===============================================================================================-->
 </head>
 <body>
-<form action="newuser.php" method="post">
+<form action="php/subscribe/newuser.php" method="post">
 	<div class="divLogin">
 		<span class="titreLogin">
 			Subscribe

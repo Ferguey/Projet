@@ -11,13 +11,30 @@ $login_valide = 'SELECT * FROM users';
 $pwd_valide = 'SELECT password FROM users';
 
 // on teste si nos variables sont définies
-if (isset($_POST['login']) && isset($_POST['password'])) {
+if (isset($_POST['login']) && isset($_POST['password']) || isset($_COOKIE['login']) && isset($_COOKIE['password']) ) {
 	$response = $bdd -> query($login_valide);
 	$results = $response->fetch();
+	if(empty($_POST['remember-me']))
+	{
+		connexion();
+	}
+	else{
+		setcookie ("login",$_POST["login"],time()+ 36000, '/');
+		setcookie ("password",$_POST["password"],time()+ 36000, '/');
+		connexion();
+	}
+}
+else {
+	echo 'Les variables du formulaire ne sont pas déclarées.';
+		
+	
+}
 
-		if($_POST['login'] == $results['Login'])
+function connexion()
+{
+	if($_POST['login'] == $results['Login'] || $_COOKIE['login'] == $results['Login'])
 		{
-			if($_POST['password'] == $results['Password'])
+			if($_POST['password'] == $results['Password'] || $_COOKIE['password'] == $results['Password'])
 			{
 	
 				session_start();
@@ -36,8 +53,4 @@ if (isset($_POST['login']) && isset($_POST['password'])) {
 			header('Location: ../badLogin.html');
 
 		}
-	
-}
-else {
-	echo 'Les variables du formulaire ne sont pas déclarées.';
 }

@@ -1,6 +1,14 @@
+<?php
+
+if(isset($_COOKIE["login"]) && isset($_COOKIE["password"]))
+{
+	header('Location: php/login.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en"><head>
-	<title>Créer une communauté</title>
+	<title>Login V10</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -10,26 +18,31 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	<form action="php/newCommu/createCommu.php" method="post" class="divLogin">
+	<form action="php/login.php" method="post" class="divLogin">
 			<span class="titreLogin">
-				Créer une communauté
+				Login
 			</span>
 					
 			<div class="divChampsLogin">
-				<input class="champsLogin" type="text" name="idCommu" placeholder="Identifiant Appartement">
+				<input class="champsLogin" type="text" name="login" value="<?php if(isset($_COOKIE["login"])) { echo $_COOKIE["login"]; } ?>" placeholder="Username">
 			</div>
 								
 			<div class="divChampsLogin">
-				<input class="champsLogin" type="password" name="password" placeholder="Mot de passe">
-			</div>
-			
-			<div class="divChampsLogin">
-				<input class="champsLogin" type="password" name="passwordConfirm" placeholder="Confirmation Mot de passe ">
+				<input class="champsLogin" type="text" name="password" value="<?php  if(isset($_COOKIE["password"])) { echo $_COOKIE["password"]; } ?>" placeholder="Password">
 			</div>
 						
+			<div class="divChampsRememberMe">
+				<input id="ckb1" type="checkbox" <?php if(isset($_COOKIE["login"])) { ?> checked <?php } ?> name="remember-me">
+				<label class="labelRememberMe" for="ckb1">
+					Remember me
+				</label>
+				<a href="passwordForget.html" class="forgotPassword">
+					Forgot?
+				</a>
+			</div>
 			<a href="index.html" class="">
 			<button class="boutonLogin">
-				Valider
+				Login
 			</button>
 			</a>
 	</form>
