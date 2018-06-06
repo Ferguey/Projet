@@ -10,15 +10,17 @@ catch (Exception $e)
 
 $login_valide = 'SELECT * FROM users';
 
-if (isset($_POST['mail']) && isset($_POST['login'])) {
+if (isset($_POST['mail'])) {
 	$response = $bdd -> query($login_valide);
 	$results = $response->fetch();
 
-		if($_POST['mail'] == $results['mail'] && $_POST['login'] == $results['Login'])
+		if($_POST['mail'] == $results['mail'])
 	{
 		include 'mail.php';
-		sendmail($_POST['mail'], $_POST['login']);
-		
+		sendmail($_POST['mail']);
+		header('Location: ../../emailSend.php');
+		session_start();
+		$_SESSION['mail'] = $_POST['mail'];
 	}
 	else
 	{

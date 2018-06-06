@@ -1,3 +1,7 @@
+<?php 
+
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en"><head>
 	<title>Mot de passe oublié</title>
@@ -17,7 +21,7 @@
 					
 			
 			<span>
-				Nous avons envoyé votre nouveau mot de passe à cette adresse mail : <?php echo $_POST['mail'] ?>
+				Nous avons envoyé votre nouveau mot de passe à cette adresse mail : <?php echo $_SESSION['mail'] ?>
 			</span>			
 			<br></br>
 			<a href="index.html" class="">

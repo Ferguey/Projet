@@ -1,7 +1,7 @@
 <?php
 
 	
-	function sendmail($mail, $login)
+	function sendmail($mail)
 	{
 		try
 {
@@ -12,15 +12,15 @@ catch (Exception $e)
         die('Erreur : ' . $e->getMessage());
 	}
 		$mailadress = $mail;
-		$name = $login;
+		
 $passage_ligne = "\n";
 include "generatepassword.php";
 $newpassword = generatepassword();
-$request = $bdd->prepare('UPDATE users set Password =  :password  WHERE Login = :name ');
-$request -> execute(array(':password' => $newpassword, ':name' => $name));
+$request = $bdd->prepare('UPDATE users set Password =  :password  WHERE mail = :email ');
+$request -> execute(array(':password' => $newpassword, ':email' => $mailadress) );
 //=====Déclaration des messages au format texte et au format HTML.
-$message_txt = "Salut ".$name  .", voici ton nouveau mot de passe : " .$newpassword;
-$message_html = "<html><head></head><body>Salut " .$name ." voici ton nouveau mot de passe : " .$newpassword."</body></html>";
+$message_txt = "Salut, voici ton nouveau mot de passe : " .$newpassword;
+$message_html = "<html><head></head><body>Salut, voici ton nouveau mot de passe : " .$newpassword."</body></html>";
 //==========
  
 //=====Création de la boundary

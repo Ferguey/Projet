@@ -21,20 +21,19 @@ if (isset($_POST['login']) && isset($_POST['password'])) {
 			{
 	
 				session_start();
-				header('Location: badPassword.html');
+				header('Location: ../communaute.html');
 				$_SESSION['login'] = $_POST['login'];
 				$_SESSION['password'] = $_POST['password'];
 		
 			}
 			else
 			{
-				header('Location: badPassword.html');
-			
+				header('Location: ../badPassword.html');
 			}
 		}
 		else
 		{
-			header('Location: badLogin.html');
+			header('Location: ../badLogin.html');
 
 		}
 	
