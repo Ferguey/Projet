@@ -1,10 +1,10 @@
 <?php
 
-if(isset($_COOKIE["login"]) && isset($_COOKIE["password"]))
+if(isset($_COOKIE["idCommu"]))
 {
 	header('Location: php/login.php');
 }
-
+?>
 <!DOCTYPE html>
 <html lang="en"><head>
 	<title>Communauté</title>

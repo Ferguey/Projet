@@ -1,3 +1,9 @@
+<?php
+
+if(isset($_COOKIE["idCommu"]))
+{
+	header('Location: murAnnonce.php');
+}
 <!DOCTYPE html>
 <html lang="en"><head>
 	<title>Rejoindre une communauté</title>
@@ -10,20 +16,20 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	<form action="php/login.php" method="post" class="divLogin">
+	<form action="php/newCommu/joinCommu.php" method="post" class="divLogin">
 			<span class="titreLogin">
 				Rejoindre une communauté
 			</span>
 					
 			<div class="divChampsLogin">
-				<input class="champsLogin" type="text" name="idFlat" placeholder="Identifiant Appartement">
+				<input class="champsLogin" type="text" name="idCommu" placeholder="Identifiant Appartement">
 			</div>
 								
 			<div class="divChampsLogin">
 				<input class="champsLogin" type="password" name="password" placeholder="Mot de passe">
 			</div>
 						
-			<a href="index.html" class="">
+			<a href="murAnnonce.php" class="">
 			<button class="boutonLogin">
 				Valider
 			</button>

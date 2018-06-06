@@ -12,23 +12,15 @@ session_start();
 // on teste si nos variables sont définies
 if (isset($_POST['idCommu']) && isset($_POST['password'])) {
 	
-		$request = $bdd->prepare('INSERT INTO communauté (Nom, Password) VALUES (:nom, :password)');
+	$request3 = $bdd->prepare('SELECT * FROM communauté WHERE Nom = :nom' );
+	$request3 -> execute(array(':nom' => $_POST['idCommu']));
 
-	$request -> execute(array(':nom' => $_POST['idCommu'], ':password' =>	 $_POST['password']));
-	$response = $request ->fetch();
-
-	$request3 = $bdd->prepare('SELECT * FROM communauté');
-
-	$request3 -> execute(array(':nom' => $_POST['idCommu'], ':password' =>	 $_POST['password']));
 	$response3 = $request3 ->fetch();
-	
 	$request2 = $bdd->prepare('UPDATE users SET idCommu = :numCommu WHERE Login = :login ');
 	$request2 -> execute(array(':numCommu' => $response3['idCommu'], ':login' => $_COOKIE['login']));
-
+		
 	$_SESSION['idCommu'] = $_POST['idCommu'];
 	setcookie ("idCommu",$_POST["idCommu"],time()+ 36000, '/');
-	
-
 }
 else {
 	echo 'Les variables du formulaire ne sont pas déclarées.';
