@@ -13,7 +13,7 @@ if(isset($_COOKIE["idCommu"]))
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="../../css/loginStyle.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../../fonts/fontAwesome/css/fontawesome-all.css">
 <!--===============================================================================================-->
 </head>
 <body>
