@@ -14,8 +14,8 @@
     display: table;
     top: 60px;
     right: 174px;
-    left: 110px;
-    width: calc(100% - 110px - 174px);
+    left: 240px;
+    width: calc(100% - 240px - 174px);
     height: calc(100% - 60px);
     background-color: #FAFAFAFA;
 }
