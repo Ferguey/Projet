@@ -38,7 +38,7 @@ function connexion()
 			{
 	
 				session_start();
-				header('Location: ../communaute.html');
+				header('Location: ../communaute.php');
 				$_SESSION['login'] = $_POST['login'];
 				$_SESSION['password'] = $_POST['password'];
 		

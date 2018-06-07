@@ -1,8 +1,8 @@
 <?php
-
+echo $_COOKIE["idCommu"];
 if(isset($_COOKIE["idCommu"]))
 {
-	header('Location: php/login.php');
+	header('Location: php/murannonce.php');
 }
 ?>
 <!DOCTYPE html>
