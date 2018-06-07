@@ -1,38 +1,42 @@
-<?php 
-
-session_start();
+<?php
+echo $_COOKIE["idCommu"];
+if(isset($_COOKIE["idCommu"]))
+{
+	header('Location: php/murannonce.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en"><head>
-	<title>Mot de passe oublié</title>
+	<title>Communauté</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/loginStyle.css">
+	<link rel="stylesheet" type="text/css" href="../../css/loginStyle.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.css">
 <!--===============================================================================================-->
 </head>
 <body>
-	<form action="" method="post" class="divLogin">
+	<div class="divLogin">
 			<span class="titreLogin">
-				Mot de passe oublié
+				Sumela
 			</span>
-					
 			
-			<span>
-				Nous avons envoyé votre nouveau mot de passe à cette adresse mail : <?php echo $_SESSION['mail'] ?>
-			</span>			
 			<br></br>
-			<a href="login.html" class="">
+		
+			<a href="communauteCreate.html" class="">
 			<button class="boutonLogin">
-				Retour
+				Créer une communauté
 			</button>
 			</a>
 			
-			<?php 
-			session_unset ();
-			session_destroy();?>
-	</form>
+			<br></br>
+			
+			<a href="communauteJoin.html" class="">
+			<button class="boutonLogin">
+				Rejoindre une communauté
+			</button>
+			</a>
+	</div>
 </body>
 </html>

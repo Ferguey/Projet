@@ -43,7 +43,6 @@ label {
 /*---------------------------------------------*/
 
 body {
-    position: fixed;
     margin: 5px;
     top: 0px;
     right: 0px;
@@ -78,6 +77,7 @@ button:hover {
     border-radius: 10px;
     position: relative;
     margin: auto;
+	margin-bottom: 20px;
     top: 60px;
     border: solid black 1px;
 }
