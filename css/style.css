@@ -21,8 +21,7 @@ body{
     top: 60px;
     left: 0px;
     height: 100%;
-    width: 140px;
-    background-color: black;
+    width: 110px;
 }
 
 .caseGaucheHaut{
@@ -41,3 +40,4 @@ body{
     /* border-bottom: 5px solid #D4D6D9; */
     background-color: #D9DBDD;
 }
+

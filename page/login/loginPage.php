@@ -40,7 +40,7 @@ if(isset($_COOKIE["login"]) && isset($_COOKIE["password"]))
 					Forgot?
 				</a>
 			</div>
-			<a href="index.html" class="">
+			<a href="post.html" class="">
 			<button class="boutonLogin">
 				Login
 			</button>

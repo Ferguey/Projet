@@ -1,0 +1,37 @@
+.banniereDroite {
+    position: fixed;
+    display: table;
+    top: 60px;
+    right: 0px;
+    height: 100%;
+    width: 174px;
+	border-left: solid 1px grey;
+    /* background-color: #D9DBDD; */
+}
+
+.main {
+    position: fixed;
+    display: table;
+    top: 60px;
+    right: 174px;
+    left: 110px;
+    width: calc(100% - 110px - 174px);
+    height: calc(100% - 60px);
+}
+
+.newPost {
+    position: relative;
+    display: table;
+    margin: 20px;
+    width: calc(100% - 40px);
+    height: 100px;
+}
+
+.post {
+    position: relative;
+    display: table;
+    margin: 20px;
+    width: calc(100% - 40px);
+    height: 220px;
+	background-color: #B9F0FF;
+}
