@@ -10,13 +10,14 @@
 }
 
 .main {
-    position: fixed;
+    position: absolute;
     display: table;
     top: 60px;
     right: 174px;
     left: 240px;
+    height: fit-content;
     width: calc(100% - 240px - 174px);
-    height: calc(100% - 60px);
+    /* height: calc(100% - 60px); */
     background-color: #FAFAFAFA;
 }
 

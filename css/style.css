@@ -7,12 +7,13 @@ body{
 }
 .banniereHaut {
     position: fixed;
-    display: table;
+    display: -webkit-inline-box;
     top: 0px;
     left: 0px;
     height: 60px;
     width: 100%;
     background-color: #FFFFFF;
+    z-index: 15;
 }
 
 .banniereGauche {
@@ -27,8 +28,8 @@ body{
 }
 
 .caseGaucheHaut{
-	display: inherit;
 	width: 240px;
+	height: 100%;
 }
 
 .caseGauche:first-child{
@@ -52,7 +53,7 @@ body{
 }
 
 .borderBanniereHaut{
-	position: absolute;
+	position: fixed;
 	top: 60px;
 	box-shadow: inset 0px 4px 8px -3px rgba(17, 17, 17, .06);
 	content: "";
@@ -76,3 +77,13 @@ body{
     margin-right: 30px;
     margin: auto;
 }
+
+.caseHaut {
+    width: calc(100% - 240px);
+}
+.boutonReglage{
+	padding: 14px;
+    float: right;
+    color: grey;
+}
+	
