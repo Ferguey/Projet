@@ -12,7 +12,7 @@ body{
     left: 0px;
     height: 60px;
     width: 100%;
-    background-color: #00C9FF;
+    background-color: #FFFFFF;
 }
 
 .banniereGauche {
@@ -22,22 +22,45 @@ body{
     left: 0px;
     height: 100%;
     width: 110px;
+    z-index: 1;
 }
 
 .caseGaucheHaut{
-	height: 60px;
+	/* height: 60px; */
+	/* width: 110px; */
+	padding: 21px;
+	padding-left: 40px;
 }
 
 .caseGauche:first-child{
 	/* border-top: 5px solid #D4D6D9; */
 }
 
+.caseGauche:hover {
+    background-color: #EBEBEB;
+}
+
 .caseGauche {
     height: calc((100% - 60px) / 4);
     background: white;
+    padding-left: 5px;
+    padding-top: calc(50% - 3px);
     /* border-right: 5px solid #D4D6D9; */
     /* border-left: 5px solid #D4D6D9; */
     /* border-bottom: 5px solid #D4D6D9; */
-    background-color: #D9DBDD;
+    background-color: #F5F5F5;
 }
 
+.borderBanniereHaut{
+	position: absolute;
+	top: 60px;
+	box-shadow: inset 0px 4px 8px -3px rgba(17, 17, 17, .06);
+	content: "";
+	height: 5px;
+	left: 0px;
+	opacity: 1;
+	pointer-events: none;
+	right: 0px;
+	width: 100%;
+	z-index: 10;
+}

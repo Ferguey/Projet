@@ -5,8 +5,8 @@
     right: 0px;
     height: 100%;
     width: 174px;
-	border-left: solid 1px grey;
-    /* background-color: #D9DBDD; */
+    border-left: solid 1px grey;
+    background-color: #FAFAFAFA;
 }
 
 .main {
@@ -17,6 +17,7 @@
     left: 110px;
     width: calc(100% - 110px - 174px);
     height: calc(100% - 60px);
+    background-color: #FAFAFAFA;
 }
 
 .newPost {
@@ -25,6 +26,7 @@
     margin: 20px;
     width: calc(100% - 40px);
     height: 100px;
+    z-index: 0;
 }
 
 .post {
