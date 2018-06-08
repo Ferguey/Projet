@@ -25,8 +25,72 @@
     display: table;
     margin: 20px;
     width: calc(100% - 40px);
-    height: 100px;
+    min-height: 130px;
     z-index: 0;
+    border: solid 2px #EBEBEB;
+    font-size: 13px;
+}
+
+.textPost {
+    width: 50%;
+    height: 100%;
+    
+}
+
+.pollPost {
+    width: 50%;
+    height: 100%;
+}
+	
+
+.textPost {
+    width: 50%;
+    height: 100%;
+}
+
+.choosePost {
+    height: 35px;
+    border-bottom: solid 1px #EBEBEB;
+    display: flex;
+    color: darkgrey;
+}
+
+.creerUnePublication {
+    padding-left: calc(50% - 62px);
+    margin-top: 10px;
+    border-right: solid 1px darkgray;
+}
+
+.creerUnSondage {
+    margin-top: 10px;
+    padding-left: calc(50% - 54px);
+}
+
+.blocNewPost {
+    width: calc(100% - 20px);
+    min-height: 70px;
+    margin: 10px;
+    border-bottom: 1px solid darkgray;
+}
+
+.contentNewPost {
+    width: calc(100% - 14px);
+    min-height: 63px;
+    margin-bottom: 7px;
+    background-color: white;
+    border: 1px solid #EBEBEB;
+    border-radius: 3px;
+    padding: 7px;
+}
+
+.validerPost {
+    margin: 7px 10px 10px 10px;
+    width: calc(100% - 20px);
+    height: 28px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #4267b2;
+    border-radius: 3px;
 }
 
 .post {
@@ -36,4 +100,15 @@
     width: calc(100% - 40px);
     height: 220px;
 	background-color: #FFFFFF;
-    border: solid 2px #EBEBEB;}
+    border: solid 2px #EBEBEB;
+}
+
+.textePublier{
+	color: white;
+	margin: auto;
+	/* vertical-align: middle; */
+	line-height: 26px;
+	font-size: 14px;
+	padding-left: calc(50% - 10px);
+	padding-right: 50%;
+}

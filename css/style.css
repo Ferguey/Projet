@@ -4,7 +4,14 @@ body{
 	height: auto;
 	width: auto;
 	background-color: #E9EBEE;
+	font-family: Helvetica, Arial, sans-serif
 }
+
+input::-webkit-input-placeholder { color: #a5a5a5;}
+input:-moz-placeholder { color: #a5a5a5;}
+input::-moz-placeholder { color: #a5a5a5;}
+input:-ms-input-placeholder { color: #a5a5a5;}
+
 .banniereHaut {
     position: fixed;
     display: -webkit-inline-box;
