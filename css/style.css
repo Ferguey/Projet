@@ -76,6 +76,7 @@ body{
     width: 105px;
     margin-right: 30px;
     margin: auto;
+    color: grey;
 }
 
 .caseHaut {
@@ -87,3 +88,6 @@ body{
     color: grey;
 }
 	
+.noDeco{
+	text-decoration: none;
+}
