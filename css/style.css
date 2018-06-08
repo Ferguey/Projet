@@ -98,3 +98,25 @@ input:-ms-input-placeholder { color: #a5a5a5;}
 .noDeco{
 	text-decoration: none;
 }
+
+.banniereDroite {
+    position: fixed;
+    display: table;
+    top: 60px;
+    right: 0px;
+    height: 100%;
+    width: 174px;
+    border-left: solid 1px grey;
+    background-color: #FAFAFAFA;
+}
+
+.main {
+    position: absolute;
+    display: table;
+    top: 60px;
+    right: 174px;
+    left: 240px;
+    width: calc(100% - 240px - 174px);
+    min-height: calc(100% - 60px);
+    background-color: #FAFAFAFA;
+}
