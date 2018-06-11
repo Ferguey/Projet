@@ -87,6 +87,10 @@
 	padding-right: 50%;
 }
 
+textarea {
+    resize: vertical;
+}
+
 /* SONDAGE */
 
 .choixSondage {

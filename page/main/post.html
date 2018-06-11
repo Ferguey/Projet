@@ -68,18 +68,18 @@
 	<div class="main">
 		<div class="newPost">
 			<div class="choosePost">
-				<div class="textPost">
+				<div class="textPost" id="apparitionBlocTexte">
 					<div class="creerUnePublication">
 					Créer une publication
 					</div>
 				</div>
-				<div class="pollPost">
+				<div class="pollPost" id="apparitionSondage">
 					<div class="creerUnSondage">
 					Créer un sondage
 					</div>
 				</div>
 			</div>
-			<div class="blocNewPost">
+			<div id="typeDePost" class="blocNewPost">
 				<textarea class="contentNewPost" type="text" name="contentNewPost" placeholder="Quoi de neuf ?"></textarea>
 			</div>
 			<div class="validerPost">
@@ -93,6 +93,27 @@
 		<div class="post">
 		</div>
 	</div>
+<script>
 
+	document.getElementById("apparitionBlocTexte").addEventListener("click", apparitionBlocTexte);
+	document.getElementById("apparitionSondage").addEventListener("click", apparitionSondage);
+	
+
+function apparitionSondage(){
+	document.getElementById("typeDePost").innerHTML = '<div id="choix"><textarea class="choixSondage" type="text" name="choix1" placeholder="Choix 1"></textarea><textarea class="choixSondage" type="text" name="choix2" placeholder="Choix 2"></textarea></div><div id="addChoix" class="addChoix">Ajouter un choix</div>';
+	document.getElementById("addChoix").addEventListener("click", addChoix);
+}
+
+function apparitionBlocTexte(){
+	document.getElementById("typeDePost").innerHTML = '<textarea class="contentNewPost" type="text" name="contentNewPost" placeholder="Quoi de neuf ?"></textarea>';
+}
+
+function addChoix(){
+	document.getElementById("choix").innerHTML = document.getElementById("choix").innerHTML + '<textarea class="choixSondage" type="text" name="Autre choix" placeholder="Autre choix"></textarea>';
+	
+}
+
+
+</script>
 </body>
 </html>
