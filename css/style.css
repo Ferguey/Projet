@@ -112,7 +112,6 @@ input:-ms-input-placeholder { color: #a5a5a5;}
 
 .main {
     position: absolute;
-    display: table;
     top: 60px;
     right: 174px;
     left: 240px;
