@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="../../fonts/fontAwesome/css/fontawesome-all.css">
 <!--===============================================================================================-->
   
+
 </head>
 <body>
 	<div class="banniereHaut">
@@ -65,29 +66,31 @@
 		
 	</div>
 	
+
 	<div class="main">
 		<div class="newPost">
 			<div class="choosePost">
-				<div class="textPost">
+				<div class="textPost" id="apparitionBlocTexte">
 					<div class="creerUnePublication">
 					Créer une publication
 					</div>
 				</div>
-				<div class="pollPost">
+				<div class="pollPost"id="apparitionSondage">
 					<div class="creerUnSondage">
 					Créer un sondage
 					</div>
 				</div>
 			</div>
-			<div class="blocNewPost">
+			<div id="test" class="blocNewPost">
 				
 				
 				
-				<textarea class="choixSondage" type="text" name="choix1" placeholder="Choix 1"></textarea>
-				<textarea class="choixSondage" type="text" name="choix2" placeholder="Choix 2"></textarea>
+				<!-- <textarea class="choixSondage" type="text" name="choix1" placeholder="Choix 1"></textarea> -->
+				<!-- <textarea class="choixSondage" type="text" name="choix2" placeholder="Choix 2"></textarea> -->
 				
-				<input class="addChoix">
-			
+				<!-- <div class="addChoix"> -->
+					<!-- Ajouter un choix -->
+				<!-- </div> -->
 			
 			
 			</div>
@@ -105,5 +108,22 @@
 		</div>
 	</div>
 
+<script>
+
+	document.getElementById("apparitionBlocTexte").addEventListener("click", apparitionBlocTexte());
+	document.getElementById("apparitionSondage").addEventListener("click", apparitionSondage());
+
+
+
+function apparitionSondage(){
+	document.getElementById("test").innerHTML = '<textarea class="choixSondage" type="text" name="choix1" placeholder="Choix 1"></textarea><textarea class="choixSondage" type="text" name="choix2" placeholder="Choix 2"></textarea><div class="addChoix">Ajouter un choix</div>';
+}
+
+
+function apparitionBlocTexte(){
+	document.getElementById("test").innerHTML = '<textarea class="contentNewPost" type="text" name="contentNewPost" placeholder="Quoi de neuf ?"></textarea>';
+}
+</script>
+	
 </body>
 </html>
