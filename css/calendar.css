@@ -1,0 +1,50 @@
+.blocCalendar {
+    position: relative;
+    margin: 20px;
+    width: calc(100% - 40px);
+    min-width: 132px;
+    z-index: 0;
+    border: solid 2px #EBEBEB;
+    font-size: 13px;
+}
+
+.addObjet {
+    position: relative;
+    display: block;
+    top: 2px;
+    box-sizing: border-box;
+    width: 130px;
+    height: 130px;
+    padding: 13px;
+    padding-top: 5px;
+    z-index: 0;
+    opacity: 0.15;
+}
+
+.divAdd {
+    position: relative;
+    width: 100%;
+    min-width: 132px;
+    z-index: 0;
+    font-size: 13px;
+}
+
+.barreAdd {
+    position: absolute;
+    top: calc(50% - 2px);
+    display: inline-flex;
+    /* float: right; */
+    background-color: black;
+    width: calc(100% - 150px);
+    height: 3px;
+    opacity: 0.20;
+}
+
+.divEvent {
+    width: calc(100% - 20px);
+    height: 72px;
+    margin: 10px;
+    box-sizing: border-box;
+    border: solid 1px black;
+}
+

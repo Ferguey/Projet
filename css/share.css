@@ -1,0 +1,53 @@
+.blocPartage {
+    position: relative;
+    margin: 20px;
+    width: calc(100% - 40px);
+    min-width: 132px;
+    z-index: 0;
+    border: solid 2px #EBEBEB;
+    font-size: 13px;
+}
+
+.divObjet {
+    position: relative;
+    display: inline-flex;
+    margin: 15px;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    border: solid 1px black;
+    border-bottom: solid red;
+    font-size: 12px;
+}
+
+.addObjet {
+    position: relative;
+    display: table !important;
+    top: 2px;
+    box-sizing: border-box;
+    width: 130px;
+    height: 130px;
+    padding: 13px;
+    padding-top: 5px;
+    z-index: 0;
+    /* background-color: #E2E2E2; */
+    opacity: 0.15;
+}
+
+.titreObjet {
+    position: relative;
+    /* display: flex; */
+    width: 100px;
+    height: 20px;
+    box-sizing: border-box;
+    /* padding: 3px 5px 5px 5px; */
+    border-bottom: 1px solid black;
+}
+.imageObjet {
+    position: absolute;
+    top: 20px;
+    width: 100px;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 5px 15px;
+}
