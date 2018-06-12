@@ -2,7 +2,7 @@
     position: relative;
     margin: 20px;
     width: calc(100% - 40px);
-    min-width: 132px;
+    min-width: 195px;
     z-index: 0;
     border: solid 2px #EBEBEB;
     font-size: 13px;
@@ -31,20 +31,77 @@
 
 .barreAdd {
     position: absolute;
-    top: calc(50% - 2px);
+    top: calc(50% - -3px);
     display: inline-flex;
-    /* float: right; */
     background-color: black;
-    width: calc(100% - 150px);
+    width: calc(100% - 105px);
     height: 3px;
     opacity: 0.20;
 }
 
 .divEvent {
     width: calc(100% - 20px);
+    min-width: 175px;
     height: 72px;
     margin: 10px;
     box-sizing: border-box;
     border: solid 1px black;
 }
 
+.mainDivEvent {
+    width: calc(100% - 75px);
+    height: 100%;
+    display: inline-block;
+    border-left: solid 1px black;
+}
+
+.divDate {
+    display: inline-block;
+    width: 70px;
+    height: 100%;
+    /* border-right: solid 1px black; */
+}
+
+.jourSemaine {
+    width: calc(100% - 6px);
+    height: 16px;
+    padding: 7px 5px;
+}
+
+.jourNumero {
+    width: calc(100% - 36px);
+    height: 26px;
+    padding: 7px 20px;
+}
+
+.boutonReglageEvent {
+    top: -70px;
+    padding: 6px;
+    float: right;
+    color: grey;
+    position: relative;
+}
+
+.titreEvent {
+    position: relative;
+    width: calc(100% - 30px);
+    min-width: 80px;
+    height: 35px;
+    display: block;
+    padding: 8px 15px;
+    box-sizing: border-box;
+}
+
+.addEvent {
+	position: relative;
+	display: block;
+	top: 2px;
+	box-sizing: border-box;
+	/* width: 130px; */
+	/* height: 130px; */
+	padding: 13px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	z-index: 0;
+	opacity: 0.15;
+}
