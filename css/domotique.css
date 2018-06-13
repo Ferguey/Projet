@@ -24,13 +24,17 @@ min-width: 268px;
 }
 
 .divDomo {
-     position: relative;
+    position: relative;
     display: inline-flex;
     margin: 15px;
     width: 100px;
     height: 100px;
     z-index: 0;
-    border: solid 1px black;
-    border-bottom: solid red;
     font-size: 12px;
+	 
+	background-image: linear-gradient(#4EA5D9 0%, #F24F1F 100%);
+	 
+    box-shadow: 2px 2px 4px 1px rgb(255,0,0,0.25), -2px 2px 4px 1px rgb(255,0,0,0.25), 2px -2px 4px 1px rgb(255,0,0,0.25), -2px -2px 4px 1px rgb(255,0,0,0.25);
+	/* box-shadow: 2px 2px 4px 1px rgb(0,255,127,0.25), -2px 2px 4px 1px rgb(0,255,127,0.25), 2px -2px 4px 1px rgb(0,255,127,0.25), -2px -2px 4px 1px rgb(0,255,127,0.25); */
+	 
 }
