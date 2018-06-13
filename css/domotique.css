@@ -1,0 +1,36 @@
+.blocDomo {
+    position: relative;
+    margin: 20px;
+    width: calc(100% - 40px);
+    min-width: 268px;
+    z-index: 0;
+    border: solid 2px #EBEBEB;
+    font-size: 13px;
+}
+
+.divAnnonce {
+    margin: 20px;
+    height: 60px;
+    min-width: 228px;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: solid 2px #EBEBEB;
+}
+
+.divAllDomo {
+	
+min-width: 268px;
+}
+
+.divDomo {
+     position: relative;
+    display: inline-flex;
+    margin: 15px;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    border: solid 1px black;
+    border-bottom: solid red;
+    font-size: 12px;
+}
