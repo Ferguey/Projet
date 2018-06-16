@@ -6,7 +6,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../../css/post.css">
+	<link rel="stylesheet" type="text/css" href="../../css/settings.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="../../fonts/fontAwesome/css/fontawesome-all.css">
 <!--===============================================================================================-->
@@ -16,9 +16,12 @@
 	<div class="banniereHaut">
 		
 		<div class="caseGaucheHaut">
+			<img src="../../images/logoFlatin.png" style="height: calc(100% - 10px); padding-top: 5px; padding-left: 30px;">
 		</div>
 		<div class="caseHaut">
-			<i class="boutonReglage fas fa-2x fa-cogs"></i>
+			<a href="settings.html" class="noDeco">
+				<i class="boutonReglage fas fa-2x fa-cogs"></i>
+			</a>
 		</div>
 		
 	</div>
@@ -66,32 +69,34 @@
 	</div>
 	
 	<div class="main">
-		<div class="newPost">
-			<div class="choosePost">
-				<div class="textPost">
-					<div class="creerUnePublication">
-					Créer une publication
-					</div>
-				</div>
-				<div class="pollPost">
-					<div class="creerUnSondage">
-					Créer un sondage
-					</div>
-				</div>
+		
+		<div class="blocSettings">
+			
+			<div class="divSettings">
+				Modifier mon pseudo :
+				<input class="champsSettings" type="text" name="newPseudo">
+				<i class="far fa-check-circle fa-2x validSettings"></i>
+
 			</div>
-			<div class="blocNewPost">
-				<textarea class="contentNewPost" type="text" name="contentNewPost" placeholder="Quoi de neuf ?"></textarea>
+			
+			<div class="divSettings">
+				Modifier mon mot de passe :
+				<input class="champsSettings" type="text" name="newPassword">
+				<i class="far fa-check-circle fa-2x validSettings"></i>
 			</div>
-			<div class="validerPost">
-				<div class="textePublier">
-				Publier
-				</div>
+			
+			<div class="divSettings">
+				Modifier ma photo de profil :
+				<form action="/action_page.php">
+					<input class="champsSettingsPP" type="file" name="newPP" accept="png/*">
+					<i type="submit" class="far fa-check-circle fa-2x validSettings"></i>
+				</form>
 			</div>
+			
+			
 		</div>
-		<div class="post">
-		</div>
-		<div class="post">
-		</div>
+		
+		
 	</div>
 
 </body>
