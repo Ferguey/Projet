@@ -76,7 +76,127 @@ input:-ms-input-placeholder { color: #a5a5a5;}
 .boutonsGauche {
     color: grey;
     padding: 10px;
-    width: 80px;
+    width: 60px;
+}
+
+.texteBanniereGauche {
+    width: 105px;
+    margin-right: 30px;
+    margin: auto;
+    color: grey;
+}
+
+.caseHaut {
+    width: calc(100% - 240px);
+}
+.boutonReglage{
+	padding: 14px;
+    float: right;
+    color: grey;
+}
+	
+.noDeco{
+	text-decoration: none;
+}
+
+.banniereDroite {
+    position: fixed;
+    display: table;
+    top: 60px;
+    right: 0px;
+    height: 100%;
+    width: 174px;
+    border-left: solid 1px grey;
+    background-color: #FAFAFAFA;
+}
+
+.main {
+    position: absolute;
+    top: 60px;
+    right: 174px;
+    left: 240px;
+    width: calc(100% - 240px - 174px);
+    min-height: calc(100% - 60px);
+    background-color: #FAFAFAFA;
+}body{
+	top: 0px;
+	left: 0px;
+	height: auto;
+	width: auto;
+	background-color: #E9EBEE;
+	font-family: Helvetica, Arial, sans-serif
+}
+
+input::-webkit-input-placeholder { color: #a5a5a5;}
+input:-moz-placeholder { color: #a5a5a5;}
+input::-moz-placeholder { color: #a5a5a5;}
+input:-ms-input-placeholder { color: #a5a5a5;}
+
+.banniereHaut {
+    position: fixed;
+    display: -webkit-inline-box;
+    top: 0px;
+    left: 0px;
+    height: 60px;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 15;
+}
+
+.banniereGauche {
+    position: fixed;
+    display: table;
+    top: 60px;
+    left: 0px;
+    height: 100%;
+    width: 240px;
+    background-color: #F5F5F5;
+    z-index: 1;
+}
+
+.caseGaucheHaut{
+	width: 240px;
+	height: 100%;
+}
+
+.caseGauche:first-child{
+	/* border-top: 5px solid #D4D6D9; */
+}
+
+.caseGauche:hover {
+    background-color: #EBEBEB;
+}
+
+.caseGauche {
+    height: 68px;
+	display: flex;
+    /* background: white; */
+    padding-left: 5px;
+    /* padding-top: calc(50% - 3px); */
+    /* border-right: 5px solid #D4D6D9; */
+    /* border-left: 5px solid #D4D6D9; */
+    /* border-bottom: 5px solid #D4D6D9; */
+    background-color: #F5F5F5;
+}
+
+.borderBanniereHaut{
+	position: fixed;
+	top: 60px;
+	box-shadow: inset 0px 4px 8px -3px rgba(17, 17, 17, .06);
+	content: "";
+	height: 5px;
+	left: 0px;
+	opacity: 1;
+	pointer-events: none;
+	right: 0px;
+	width: 100%;
+	z-index: 10;
+}
+
+.boutonsGauche {
+    color: grey;
+    padding: 10px;
+    width: 60px;
 }
 
 .texteBanniereGauche {
