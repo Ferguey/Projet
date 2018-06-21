@@ -75,11 +75,12 @@
 				Il fait actuellement 28 degré celcius
 			</div>
 			<div class="divAllDomo">
-				<div class="divDomo">
+				<div class="divDomo" id="divDomo1">
 					<div class="divNom">
 						Ventilateur
 					</div>
-					<img src="../../images/ventilateur.png" alt="Avatar" style="padding-left: 20px;padding-right: 0px;">
+					<img src="../../images/ventilateur.png" alt="Avatar" id="ventilateur" style="height: 59px;padding: 0 20px;">
+					<div class="divOn"id="divOn1">ON / OFF</div>
 				</div>
 				<div class="divDomo">
 					<div class="divNom">
@@ -92,6 +93,25 @@
 		
 		
 	</div>
+<script>
+document.getElementById("divOn1").addEventListener("click", onOff);
+var i = 1;	
+
+function onOff(){
+	if (i%2 == 0) {
+		document.getElementById("divDomo1").style.boxShadow = "2px 2px 4px 1px rgb(255,0,0,0.25), -2px 2px 4px 1px rgb(255,0,0,0.25), 2px -2px 4px 1px rgb(255,0,0,0.25), -2px -2px 4px 1px rgb(255,0,0,0.25)";
+		document.getElementById("ventilateur").style.animationName = "none";
+
+
+	} else {
+		document.getElementById("divDomo1").style.boxShadow = "2px 2px 4px 1px rgb(0,255,127,0.25), -2px 2px 4px 1px rgb(0,255,127,0.25), 2px -2px 4px 1px rgb(0,255,127,0.25), -2px -2px 4px 1px rgb(0,255,127,0.25)";
+		document.getElementById("ventilateur").style.animationDuration = "100s";
+		document.getElementById("ventilateur").style.animationName = "spin";
+		document.getElementById("ventilateur").style.animationIterationCount = "infinite";
+	}
+	i = i + 1;
+}
+</script>
 
 </body>
 </html>

@@ -123,8 +123,8 @@ input:-ms-input-placeholder { color: #a5a5a5;}
 	left: 0px;
 	height: auto;
 	width: auto;
-	background-color: #E9EBEE;
-	font-family: Helvetica, Arial, sans-serif
+	background-color: #FAFAFAFA;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 input::-webkit-input-placeholder { color: #a5a5a5;}
@@ -226,7 +226,7 @@ input:-ms-input-placeholder { color: #a5a5a5;}
     right: 0px;
     height: 100%;
     width: 174px;
-    border-left: solid 1px grey;
+    border-left: #FAFAFAFA;
     background-color: #FAFAFAFA;
 }
 
@@ -237,5 +237,6 @@ input:-ms-input-placeholder { color: #a5a5a5;}
     left: 240px;
     width: calc(100% - 240px - 174px);
     min-height: calc(100% - 60px);
+    max-width: 50%;
     background-color: #FAFAFAFA;
 }

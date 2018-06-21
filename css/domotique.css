@@ -19,22 +19,40 @@
 }
 
 .divAllDomo {
-	
-min-width: 268px;
+	min-width: 268px;
+	display: flex;
 }
 
 .divDomo {
     position: relative;
-    display: inline-flex;
+    display: table;
     margin: 15px;
+    max-height: 100px;
     width: 100px;
     height: 100px;
     z-index: 0;
     font-size: 12px;
-	 
-	background-image: linear-gradient(#4EA5D9 0%, #F24F1F 100%);
-	 
+    background-image: linear-gradient(#4EA5D9 0%, #F24F1F 100%);
     box-shadow: 2px 2px 4px 1px rgb(255,0,0,0.25), -2px 2px 4px 1px rgb(255,0,0,0.25), 2px -2px 4px 1px rgb(255,0,0,0.25), -2px -2px 4px 1px rgb(255,0,0,0.25);
-	/* box-shadow: 2px 2px 4px 1px rgb(0,255,127,0.25), -2px 2px 4px 1px rgb(0,255,127,0.25), 2px -2px 4px 1px rgb(0,255,127,0.25), -2px -2px 4px 1px rgb(0,255,127,0.25); */
-	 
+    /* box-shadow: 2px 2px 4px 1px rgb(0,255,127,0.25), -2px 2px 4px 1px rgb(0,255,127,0.25), 2px -2px 4px 1px rgb(0,255,127,0.25), -2px -2px 4px 1px rgb(0,255,127,0.25); */
+}
+
+.divOn {
+    float: right;
+    padding: 2px 5px 3px 0;
+    cursor: pointer;
+}
+
+.divNom {
+    padding: 2px;
+    padding-left: 18px;
+}
+
+@keyframes spin {
+   from{
+ transform: rotate(0deg);
+ }
+ to{
+ transform: rotate(36000deg);
+ }
 }
